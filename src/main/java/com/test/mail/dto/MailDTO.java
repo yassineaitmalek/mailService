@@ -1,5 +1,6 @@
 package com.test.mail.dto;
 
+import java.io.File;
 import java.util.List;
 
 import org.springframework.web.multipart.MultipartFile;
@@ -23,6 +24,8 @@ public class MailDTO {
 
   private String body;
 
-  private List<MultipartFile> files;
+  private List<MultipartFile> uploadedFiles;
+
+  private List<File> localFiles;
 
 }
